@@ -1,0 +1,55 @@
+<CalculatorButton@Button>:
+    font_size: 32
+    color: 1, 1, 1, 1  # white color
+    background_color: .3, .3, .3, 1  # dark gray
+    background_normal: ''  # removing default styling
+
+<CalculatorApp>:
+    GridLayout:
+        cols: 4
+        padding: 50
+        spacing: 10
+        CalculatorButton:
+            text: '7'
+        CalculatorButton:
+            text: '8'
+        CalculatorButton:
+            text: '9'
+        CalculatorButton:
+            text: '/'
+        CalculatorButton:
+            text: '4'
+        CalculatorButton:
+            text: '5'
+        CalculatorButton:
+            text: '6'
+        CalculatorButton:
+            text: '*'
+        CalculatorButton:
+            text: '1'
+        CalculatorButton:
+            text: '2'
+        CalculatorButton:
+            text: '3'
+        CalculatorButton:
+            text: '-'
+        CalculatorButton:
+            text: '0'
+        CalculatorButton:
+            text: '.'
+        CalculatorButton:
+            text: '='
+            background_color: .9, .3, .2, 1  # red color
+
+        CalculatorButton:
+            text: '+'
+        TextInput:
+            id: result
+            font_size: 32
+            multiline: False
+            readonly: True
+            halign: 'right'
+            size_hint_y: None
+            height: 100
+            background_color: .2, .2, .2, 1  # darker gray
+            foreground_color: 1, 1, 1, 1  # white color

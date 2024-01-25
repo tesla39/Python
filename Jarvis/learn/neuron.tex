@@ -1,0 +1,46 @@
+In other words, it applies a matrix multiplication between the input and a learnable weight matrix, followed by an optional bias term.
+The purpose of this linear layer is to learn the appropriate weights and biases that best map the input data to the desired output. 
+During training, these weights and biases are adjusted through backpropagation to minimize a defined loss function.In summary, the nn.
+Linear function is responsible for the linear transformation of input data
+ by applying matrix multiplication with learnable weights and biases, enabling the neural 
+ network to learn and make predictions based on the input features
+ 
+ 
+ Real World Example:
+ Imagine you have a dataset of house prices, and you want to build a neural network that can predict the price of a house based on its features like the number of bedrooms, square footage, and location. The nn.Linear function plays a crucial role in this task.
+ 
+ Code Example:
+ Let's say you have a neural network with a single input feature (number of bedrooms) and you want to predict the house price. Here's how you can use the nn.Linear function in PyTorch:
+ 
+ import torch
+ import torch.nn as nn
+ 
+ # Define the input size (number of features) and output size (1 for house price)
+ input_size = 1
+ output_size = 1
+ 
+ # Create an instance of the nn.Linear class
+ linear_layer = nn.Linear(input_size, output_size)
+ 
+ # Generate a random input tensor representing the number of bedrooms
+ input_tensor = torch.tensor([[3.0], [4.0], [2.0]])
+ 
+ # Apply the linear transformation to the input tensor
+ output_tensor = linear_layer(input_tensor)
+ 
+ # Print the predicted house prices
+ print(output_tensor)
+ In this code, we first define the input size as 1 (number of bedrooms) and the output size as 1 (house price). Then, we create an instance of the nn.Linear class called linear_layer. This linear layer will learn the weights and biases required to map the number of bedrooms to the house price.
+ 
+ Next, we generate a random input tensor representing the number of bedrooms for three houses. We pass this input tensor to the linear_layer, which performs the matrix multiplication between the input and the learnable weight matrix, followed by an optional bias term.
+ 
+ The output tensor represents the predicted house prices. Each value in the output tensor corresponds to the predicted price for a house with a specific number of bedrooms. Finally, we print the predicted house prices.
+ 
+ During the training process, the weights and biases of the linear layer will be adjusted through backpropagation to minimize the difference between the predicted house prices and the actual prices in the training data. This allows the neural network to learn and make accurate predictions based on the input features.
+
+ 
+2. WHat is tensor?
+ --> tensors are data structrue in deep learning. It is multi-dimensional array that can store and manipulate numerical
+ data efficiently.
+
+ 3.

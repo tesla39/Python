@@ -1,0 +1,26 @@
+{
+    "intents":[
+        {
+            "tag":"greeting",
+            "patterns":["hello","hi","hey","Namaste","Wake up","jarvis"
+            ],
+            "responses":["Hello Sir","Hello","Hi","Hey,How are You sir","Hi,What's up!","Hello,How can i asist you today"
+            ]
+        },
+        {
+            "tag":"bye",
+            "patterns":["bye","good bye","see you later","shut down","exit","sleep"],
+            "responses":["Bye","Always for you sir","Okay sir","Good bye sir","See you later"]
+        },
+        {
+            "tag":"health",
+            "patterns":["how are you","how you doing","are you doing good","all good","what happened to you","Are you okay"],
+            "responses":["fine","perfect","nothing","cool","great"]
+        },
+        {
+            "tag":"personal",
+            "patterns":["your name","who are you","what is your name","tell me about yourself","tell about yourself","give your details"],
+            "responses":["Jarvis","I am jarvis","AI assistant"]
+        }
+    ]
+}
