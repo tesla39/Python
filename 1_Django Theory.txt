@@ -1,0 +1,21 @@
+Django
+
+Language: Python
+Philosophy: "The web framework for perfectionists with deadlines"
+Architecture: Follows the MVT (Model-View-Template) architecture
+Built-in Features: Django comes with a wide range of built-in features like an ORM, authentication, admin panel, form handling, and more.
+Use Cases: Suitable for large-scale applications, data-driven applications, and projects that need rapid development.
+
+1. "Batteries-Included" Philosophy
+
+Comprehensive Features: Django comes with a wide range of built-in features that cover many aspects of web development, such as ORM, authentication, admin interface, and form handling. This reduces the need for third-party libraries and accelerates the development process.
+
+Admin Interface: Django's auto-generated admin interface is a powerful feature that allows developers to quickly manage application data without having to build a separate admin backend.
+
+2.Rapid Development
+DRY Principle: Django follows the "Don't Repeat Yourself" principle, encouraging code reuse and reducing redundancy. This leads to faster development and easier maintenance.
+
+3.Security
+4.Verstality
+5.DRS (Django Rest Framework)
+6.Easy integration with Datascience and Blockchain.

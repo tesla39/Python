@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{%block template%}
+   
+   <h1> Students data </h1>
+   {{vegetables}} 
+
+   <table class='container'>
+    <tr>
+      <th>S.N</th>
+      <th>Name</th>
+      <th>Class</th>  
+    </tr>
+    {% for student in students %}   <!--for loop tag in Django -->
+    <tr>
+        <td>{{forloop.counter}}</td>
+        <td>{{student.name}}</td>
+        <td>{{student.class}}</td>
+    </tr>
+    {% endfor %}
+                                            
+    {%if "apple" in vegetables %}       <!--If else tag in Django -->
+    <H3> Apples </h3>
+    {%else%}
+    <H3>No Apples </h3>
+        {%endif%}   
+    <tr> 
+  </table>
+
+<h2><a href='about'> About page </a> </h2>
+  {% endblock %}

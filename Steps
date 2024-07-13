@@ -1,0 +1,23 @@
+_________Steps_________
+
+1. Creating virtual environment > activating >dowlonad Django> Creating project > Creating APp
+2. Adding URL of Application in project's URL file
+3. Adding URL file in Application Directory
+4. Adding 'Appname' in installed app to use templates of Application
+5. Creating "HTML files" in templates
+6. Using Django tags to make the page dynamic
+7. Routing via URLS
+8. Adding HTTP controller function in view.php file
+
+_________Models_________
+
+1. Creating schema
+2. Interacting via Shell
+3.
+
+_________FORM_________
+
+1. Create form.py in App1 directory
+2. Import classes and model
+3. Define meta
+4. Create view to pass the data from model

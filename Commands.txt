@@ -1,0 +1,26 @@
+Create virtual env:- python -m venv venv
+Activate virtual env:- venv\Scripts\activate
+
+Creating Django project: django-admin startproject myproject (cd myproject)
+Creating Project application: django-admin startapp App1 
+
+python manage.py makemigrations
+python manage.py migrate
+python manage.py runserver
+
+Delete: rm -r App1
+_________________________________
+
+
+Shell
+
+1.Opening shell: python manage.py shell
+exit():- to exit
+2.Importing database: from App1.models import *
+3.Inserting data: Student = Student(name="Ram",age=19,)
+                     OR,
+                  Student.objects.create(name="Ram",age=19,)   
+4.Save operation: Student.save()
+5.Show:- Student.objects.all()
+         Student.objects.all()[0].name
+         Student.objects.all()[1].age

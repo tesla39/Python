@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Record Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+     
+    <style>
+     table, th, td{
+         border: 1px solid black;
+         }
+    </style>
+</head>
+<body>
+    <h1>Student Record Page</h1>
+<!--inserting form-->
+    <!--  <form>
+        {{form}}
+      </form>   -->
+
+
+      {% for student in students %}   <!--for loop tag in Django -->
+          {{student.name}} - {{student.age}} - {{student.email}}
+        {%endfor%}
+
+     {% for field in form %}     <!--printing the fields of form-->
+        {{field}} 
+     {%endfor%}
+
+     <button name="save">Save </button>
+     <br>
+     <br>
+    <table class='container'>
+        <tr>
+          <th>S.N</th>
+          <th>Name</th>
+          <th>Age</th>  
+          <th>Email</th>
+          <th>Action</th>
+        </tr>
+
+        {% for student in Student %}   <!--for loop tag in Django -->
+        <tr>
+            <td>{{forloop.counter}}</td>
+            <td>{{student.name}}</td>
+            <td>{{student.age}}</td>
+            <td>{{student.email}}</td>
+            <td>
+            <button name="edit"> Edit </button>
+            <button name="delete"> Delete </button>
+            </td>
+        </tr>
+        {% endfor %} 
+
+        <tr> 
+      </table>
+
+</body>
+</html>
